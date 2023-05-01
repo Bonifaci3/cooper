@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <button id="button">кнопка</button>
+    <button class="class">кнопка</button>
+    <button id="id_button">кнопка</button>
+    <div>
+        <h1>Привет Андрей!</h1>
+    </div>
+    <div>
+        <h1 id="qwe" >Привет Андрей!</h1>
+    </div>
+    <div>
+        <h1 class="title">Привет Андрей!</h1>
+    </div>
+    <div>
+        <h2>Статья один</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quisquam, iure earum ratione excepturi nostrum mollitia minus, dolorum nobis a deleniti odit ab veritatis temporibus harum alias hic quae. A.</p>
+
+
+        <form action="submit">
+            <input type="text">
+            <input type="text">
+            <input type="number">
+            <button >sumit</button>
+        </form>
+    </div>
+    <script>
+        let doc  = document
+        var button = doc.querySelectorAll('button');
+        console.log(doc)
+        console.log(button[0])
+
+        button[0].addEventListener('click', ()=> {button[0].textContent= 'ХУЙ'})
+    </script>
+</body>
+</html>
